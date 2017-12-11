@@ -30,9 +30,7 @@ function displayAnimalGif() {
 	var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=lzcGYta9bfMdDiwu3ZImzoJH3rgRatgC&q=" + animalName + "&limit=10&offset=0&&lang=en";
 	$.ajax({
       url: queryURL,
-      // The next line tells the previous URL what we want to do to it.
       method: "GET"
-      // the next line says to stop the request, then run a function.
     }).done(function(response) {
     	for (var i = 0; i < response.data.length - 1; i++) {
     		// Saves the URL for both still and moving GIFs into variables to use later
@@ -50,7 +48,7 @@ function displayAnimalGif() {
         	animalImage.attr("alt", "animal image");
         	animalImage.addClass("gifType");
         	// Puts the GIF on the HTML
-        	$("#gifs").prepend(animalImage, rating);
+        	$("#gifs").prepend(animalImage, "rated: " + rating);
 
         }
     	
