@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Movie GIFs</title>
+	<title>Animals GIFs</title>
 	<link rel="stylesheet" type="text/css" href="./assets/style.css">
 	<link rel="stylesheet" type="text/css" href="./assets/style.css">
 	<link rel="stylesheet"  href="https://bootswatch.com/4/slate/bootstrap.css">
@@ -9,20 +9,22 @@
 <body>
 	<div class="container">
 		<!-- Movies get put here -->
-		<div id="movies-view"></div>
+		<div id="animal-view"></div>
 		<!-- Movies get typed in here -->
-		<form id="movie-form">
-      		<label for="movie-input">Add a Movie </label>
-      		<input type="text" id="movie-input">
+		<form id="animal-form">
+      		<label for="animal-input">Add an Animal </label>
+      		<input type="text" id="animal-input">
       		<br>
 
       <!-- Button triggers new movie to be added -->
-      <input id="add-movie" type="submit" value="Add a Movie">
+      <input id="add-animal" type="submit" value="Add an Animal">
+
+      <div id="gifs"></div>
     </form>
 
 
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- 	<script src="./assets/movie.js" type="text/javascript"></script>
+ 	<script src="./assets/animal.js" type="text/javascript"></script>
 </body>
 </html>
