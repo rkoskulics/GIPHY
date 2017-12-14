@@ -1,5 +1,5 @@
 // Empty array to hold the animal the user types in
-var animalList = ["sparrows", "fox", "bulldog"];
+var animalList = ["sparrows", "fox", "bulldog", "pangolin", "penguin", "cow"];
 
 function renderButtons() {
         // Delete the content inside the animal-view div prior to adding new animal
@@ -19,7 +19,7 @@ $("#add-animal").on("click", function(event) {
     event.preventDefault();
     // Write code to grab the text the user types into the input field
     var animal = $("#animal-input").val().trim();
-    // Write code to add the new movie into the animalList array
+    // Write code to add the new animal into the animalList array
     animalList.push(animal);
     renderButtons();
     });
